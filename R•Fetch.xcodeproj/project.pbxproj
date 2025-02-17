@@ -27,6 +27,7 @@
 		A75A5A012D63DAC200013C9F /* R•Fetch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "R•Fetch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A75A5A122D63DAC400013C9F /* R•FetchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "R•FetchTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A75A5A1C2D63DAC400013C9F /* R•FetchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "R•FetchUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A75A5A5F2D63DC6900013C9F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -35,9 +36,9 @@
 			path = "R•Fetch";
 			sourceTree = "<group>";
 		};
-		A75A5A152D63DAC400013C9F /* R•FetchTests */ = {
+		A75A5A152D63DAC400013C9F /* R•FetchUnitTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "R•FetchTests";
+			path = "R•FetchUnitTests";
 			sourceTree = "<group>";
 		};
 		A75A5A1F2D63DAC400013C9F /* R•FetchUITests */ = {
@@ -75,8 +76,9 @@
 		A75A59F82D63DAC100013C9F = {
 			isa = PBXGroup;
 			children = (
+				A75A5A5F2D63DC6900013C9F /* README.md */,
 				A75A5A032D63DAC200013C9F /* R•Fetch */,
-				A75A5A152D63DAC400013C9F /* R•FetchTests */,
+				A75A5A152D63DAC400013C9F /* R•FetchUnitTests */,
 				A75A5A1F2D63DAC400013C9F /* R•FetchUITests */,
 				A75A5A022D63DAC200013C9F /* Products */,
 			);
@@ -131,7 +133,7 @@
 				A75A5A142D63DAC400013C9F /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				A75A5A152D63DAC400013C9F /* R•FetchTests */,
+				A75A5A152D63DAC400013C9F /* R•FetchUnitTests */,
 			);
 			name = "R•FetchTests";
 			packageProductDependencies = (
