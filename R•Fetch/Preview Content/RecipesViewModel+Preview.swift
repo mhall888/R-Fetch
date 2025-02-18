@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+extension RecipesViewModel {
+    static let preview = RecipesViewModel(recipesNetwork: RecipesDataSourceMock(),
+                                         imageNetwork: ImageDataSourceMock())
+}

@@ -6,3 +6,12 @@
 //
 
 import Foundation
+import SwiftUI
+
+extension View {
+    func data() async -> Data? {
+        let result = await ImageRenderer(content: self).data()
+
+        return result
+    }
+}

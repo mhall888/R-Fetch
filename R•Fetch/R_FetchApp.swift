@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct R_FetchApp: App {
+    let recipesViewModel = RecipesViewModel(recipesNetwork: RecipesDataSource(),
+                              imageNetwork: ImageDataSource())
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RecipesListView(recipesViewModel: recipesViewModel)
         }
     }
 }

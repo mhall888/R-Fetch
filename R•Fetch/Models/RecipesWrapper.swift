@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+struct RecipesWrapper {
+    private(set) var recipes: [Recipe]
+}
+
+extension RecipesWrapper: Decodable {
+}
