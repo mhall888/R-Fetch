@@ -9,7 +9,8 @@ import Foundation
 
 actor RecipesDataSource: RecipesNetworking {
     func fetchRecipes() async throws -> [Recipe] {
-        let urlString = "https://d3jbb8n5wk0qxi.cloudfront.net/recipes.json"
+        let urlString = "http://127.0.0.1:8080/recipes/recipes_all_localHost.json"
+//        let urlString = "https://d3jbb8n5wk0qxi.cloudfront.net/recipes.json"
 //        let urlString = "https://d3jbb8n5wk0qxi.cloudfront.net/recipes-empty.json"
 //        let urlString = "https://d3jbb8n5wk0qxi.cloudfront.net/recipes-malformed.json"
         let result = try await RecipesDataSource.decodedData(from: urlString)

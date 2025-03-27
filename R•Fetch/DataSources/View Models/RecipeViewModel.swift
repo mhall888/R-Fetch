@@ -62,7 +62,7 @@ extension RecipeViewModel {
 
         if let uuid = UUID(uuidString: recipe.id),
            let path = recipe.imageURL {
-            result = try await imageLoader.loadImageData(id: uuid, path: path)
+            result = try await imageLoader.loadImageData(from: path, for: uuid)
         }
 
         return result
